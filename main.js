@@ -1,6 +1,12 @@
-function playSound(idKey) {
-  document.querySelector(idKey).load();
-  document.querySelector(idKey).play();
+function playSound(audioSelection) {
+  const element = document.querySelector(audioSelection);
+
+  if (element && element.localName === "audio") {
+    element.load();
+    element.play();
+  } else {
+    console.log(`${audioSelection} is not an audio file.`);
+  }
 }
 
 const keyList = document.querySelectorAll(".key");
