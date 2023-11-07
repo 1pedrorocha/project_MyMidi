@@ -3,14 +3,11 @@ function playSound(idKey) {
   document.querySelector(idKey).play();
 }
 
-let counter = 0;
 const keyList = document.querySelectorAll(".key");
 
-while (counter < keyList.length) {
-  const key = keyList[counter];
+for (let i = 0; i < keyList.length; i++) {
+  const key = keyList[i];
   const keyName = key.classList[1];
-
-  console.log(keyName);
 
   const idAudio = `#sound_${keyName}`;
 
@@ -19,5 +16,4 @@ while (counter < keyList.length) {
   key.onclick = function () {
     playSound(idAudio);
   };
-  counter++;
 }
