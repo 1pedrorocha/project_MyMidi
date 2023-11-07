@@ -8,7 +8,7 @@
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #f6fdff 0%, #c2c5c8 100%);
+  background: linear-gradient(45deg, rgb(79, 79, 79) 0%, #3a3a3a 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,15 +17,15 @@ body {
 }
 
 h1 {
-  color: #302f2f;
+  color: #656565;
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 800;
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #574949 0%, #302f2f 100%);
-  box-shadow: 6px 8px 0 6px #1d1d1d, 10px 10px 10px #000;
+  background: linear-gradient(to bottom, #414141 0%, #292929 100%);
+  box-shadow: 0px 8px 0 12px #1d1d1d, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;
   gap: 10px;
@@ -34,7 +34,7 @@ h1 {
 }
 
 .tecla {
-  background-color: #645a5a;
+  background-color: #656565;
   border-radius: 30px;
   box-shadow: 3px 3px 0 var(--cinza);
   color: #aba4a4;
